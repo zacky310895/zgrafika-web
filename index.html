@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  
+<!-- Mirrored from cluster.terratradesolution.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 May 2025 03:32:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Z Grafika</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/nyoba.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/nyoba.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/nyoba.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/nyoba.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/nyoba.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/nyoba.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/nyoba.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/nyoba.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/nyoba.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/nyoba.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/nyoba.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/nyoba.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/nyoba.png">
+    <link rel="manifest" href="template/live/assets/images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/nyoba.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="template/live/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="template/live/assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="template/live/assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="template/live/assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="template/live/assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="template/live/assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="template/live/assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="template/live/assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="template/live/assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <link href="template/live/assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="template/live/assets/css/colors/default.css" rel="stylesheet">
+    <style>
+        .works-grid .work-image {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .works-grid .work-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .whatsapp-button img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .zoom-effect {
+            transition: transform 0.5s ease;
+        }
+
+        .zoom-effect:hover {
+            transform: scale(1.3);
+        }
+
+        .zoom-lens {
+          position: absolute;
+          border: 1px solid #d4d4d4;
+          width: 100px;
+          height: 100px;
+          display: none;
+          pointer-events: none;
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .zoom-result {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          display: none;
+          z-index: 100000;
+          background-repeat: no-repeat;
+        }
+
+        .map-container {
+          width: 100%;
+          max-width: 100%;
+          position: relative;
+          padding-bottom: 56.25%; /* 16:9 aspect ratio */
+          height: 100%;
+          max-height: 100%;
+          overflow: hidden;
+        }
+
+        .map-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
+
+        .home-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .carousel-inner > .item {
+            height: 100vh;
+        }
+        .carousel-inner > .item > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .carousel-caption {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .icon-madrid {
+                width: 400px
+            }
+        }
+
+        .judul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: black;
+        }
+
+        .judul::before,
+        .judul::after {
+            content: "";
+            flex-grow: 1;
+            height: 2px;
+            background-color: black;
+        }
+
+        .judul2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: white;
+        }
+
+        .judul2::before,
+        .judul2::after {
+            content: "";
+            flex-grow: 1;
+            height: 2px;
+            background-color: white;
+        }
+
+        .work-image {
+            position: relative;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .work-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 20px
+        }
+
+        .work-image h3 {
+            position: absolute;
+            bottom: 10px; /* Jarak dari bawah */
+            left: 50%;
+            transform: translateX(-50%); /* Agar teks tetap di tengah */
+            background: rgba(0, 0, 0, 0.6); /* Latar belakang semi-transparan */
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+      <nav class="navbar navbar-custom navbar-transparent navbar-fixed-top one-page" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Z <span style="color:rgb(255, 49, 8)">GRAFIKA</span></a>
+          </div>
+          <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#totop">Beranda</a></li>
+              <li><a class="section-scroll" href="#tentang">Tentang</a></li>
+              <li><a class="section-scroll" href="#fasilitas">Product</a></li>
+              <!-- <li><a class="section-scroll" href="#kontak">Kontak Emergensi</a></li> -->
+              <!-- <li><a class="section-scroll" href="#tata-tertib">Tata Tertib</a></li> -->
+              <li><a class="section-scroll" href="#pengurus">Bioadata</a></li>
+              <!-- <li><a class="section-scroll" href="login.html">Login</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="home-section home-full-height bg-dark bg-gradient" id="home" data-background="assets/img/home.jpg">
+        <div class="titan-caption">
+          <div class="caption-content">
+            <div class="font-alt mb-30 titan-title-size-1">Selamat Datang di</div>
+            <div class="font-alt mb-40 titan-title-size-4">Z GRAFIKA</div><a class="section-scroll btn btn-border-w btn-round" href="#tentang">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <div class="main">
+        <section class="module" id="tentang" style="background-color: rgb(236, 236, 236)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <center>
+                            <img src="assets/img/nyoba.png" style="width: 250px" class="zoom-effect" alt="Z Grafika"/>
+                        </center>
+                    </div>
+                    <div class="col-sm-6 col-md-8 col-lg-8">
+                        <div class="work-details">
+                            <h2 class="work-details-title font-alt judul" style="color:black">Tentang Kami</h2>
+                            <p style="font-size: 15px">Z Grafika adalah sebuah perusahaan kecil yang menggeluti bidang percetakan, khusus nya di bidang sablon Plastik. Perusahaan ini berdiri sejak tahun 2021</p>
+                            <p style="font-size: 15px">Z Grafika yang ber alamat kan di Kp. Genteng RT.001 RW.013 Kelurahan Sukajaya Kecamatan Tarogong Kidul Kabupaten Garut Provinsi Jawa Barat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="module" id="fasilitas">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <h2 class="module-title font-alt judul" style="color:black">Produck</h2>
+                    <div class="module-subtitle font-serif">Produck yang kami sediakan di antaranya adalah.</div>
+                </div>
+            </div>
+            <div class="container">
+                <ul class="works-grid works-grid-gut works-grid-3 works-hover-w" id="works-grid">
+                                            <li class="work-item illustration webdesign">
+                            <a href="storage/fasilitas/onegate.jpg" target="_blank">
+                                <div class="work-image"><img src="storage/fasilitas/sabloj plastik.jpg" alt="plastik"/><h3>SABLON PLASTIK</h3></div>
+
+                                <div class="work-caption font-alt">
+                                </div>
+                            </a>
+                        </li>
+                                            <li class="work-item illustration webdesign">
+                            <a href="storage/fasilitas/security.jpg" target="_blank">
+                                <div class="work-image"><img src="storage/fasilitas/sablon gelas cup.jpg" alt="gelas cup"/><h3>SABLON GELAS CUP</h3></div>
+
+                                <div class="work-caption font-alt">
+                                </div>
+                            </a>
+                        </li>
+                                            <li class="work-item illustration webdesign">
+                            <a href="storage/fasilitas/cctv.jpg" target="_blank">
+                                <div class="work-image"><img src="storage/fasilitas/sablon botol thumbler.jpeg" alt="Botol"/><h3>SABLON BOTOL THUMBLER</h3></div>
+
+                                <div class="work-caption font-alt">
+                                </div>
+                            </a>
+                        </li>
+                                            <li class="work-item illustration webdesign">
+                            <a href="storage/fasilitas/pohon.jpg" target="_blank">
+                                <div class="work-image"><img src="storage/fasilitas/label baju.jpg" alt="Label Baju"/><h3>SABLON LABEL BAJU</h3></div>
+
+                                <div class="work-caption font-alt">
+                                </div>
+                            </a>
+                        </li>
+                                            <li class="work-item illustration webdesign">
+                            <a href="storage/fasilitas/fasilitas.jpg" target="_blank">
+                                <div class="work-image"><img src="storage/fasilitas/banner.jpg" alt="Banner"/><h3>CETAK BANNER</h3></div>
+
+                                <div class="work-caption font-alt">
+                                </div>
+                            </a>
+                        </li>
+                                            <!-- <li class="work-item illustration webdesign">
+                            <a href="storage/fasilitas/posyandu.png" target="_blank">
+                                <div class="work-image"><img src="storage/fasilitas/posyandu.png" alt="POSYANDU"/><h3>FOTOCOPY</h3></div>
+
+                                <div class="work-caption font-alt">
+                                </div>
+                            </a>
+                        </li>
+                                          <li class="work-item illustration webdesign">
+                            <a href="storage/fasilitas/posyandu.png" target="_blank">
+                                <div class="work-image"><img src="storage/fasilitas/posyandu.png" alt="POSYANDU"/><h3>PRINT DOKUMENT</h3></div>
+
+                                <div class="work-caption font-alt">
+                                </div>
+                            </a>
+                        </li> -->
+                                    </ul>
+            </div>
+        </section>
+
+        <section class="module-small bg-dark" id="kontak">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <h2 class="module-title font-alt judul2" style="color:white">Kontak</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                                            <div class="col-sm-6 col-md-6 col-lg-6 col-lg-offset-2">
+                            <div class="callout-text font-alt">
+                            <h3 class="callout-title"><i class="fa fa-phone"></i>Kontak WhatsApp</h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-2">
+                            <div class="callout-btn-box"><a class="btn btn-w btn-round" style="display: block; width: 100%; text-align: center; min-width: 150px; padding: 10px 15px;" href="tel:083827908956">0838-2790-8956</a></div>
+                        </div>
+                        <br>
+                        <br>
+                                            <!-- <div class="col-sm-6 col-md-6 col-lg-6 col-lg-offset-2">
+                            <div class="callout-text font-alt">
+                            <h3 class="callout-title"><i class="fa fa-phone"></i> Ambulance Kota Bekasi</h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-2">
+                            <div class="callout-btn-box"><a class="btn btn-w btn-round" style="display: block; width: 100%; text-align: center; min-width: 150px; padding: 10px 15px;" href="tel:119">119</a></div>
+                        </div>
+                        <br>
+                        <br>
+                                            <div class="col-sm-6 col-md-6 col-lg-6 col-lg-offset-2">
+                            <div class="callout-text font-alt">
+                            <h3 class="callout-title"><i class="fa fa-phone"></i> Dinas Pemadam Kebakaran Kota Bekasi</h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-2">
+                            <div class="callout-btn-box"><a class="btn btn-w btn-round" style="display: block; width: 100%; text-align: center; min-width: 150px; padding: 10px 15px;" href="tel:02188957805">02188957805</a></div>
+                        </div>
+                        <br>
+                        <br>
+                                            <div class="col-sm-6 col-md-6 col-lg-6 col-lg-offset-2">
+                            <div class="callout-text font-alt">
+                            <h3 class="callout-title"><i class="fa fa-phone"></i> BPBD Kota Bekasi</h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-2">
+                            <div class="callout-btn-box"><a class="btn btn-w btn-round" style="display: block; width: 100%; text-align: center; min-width: 150px; padding: 10px 15px;" href="tel:081283957877">081283957877</a></div>
+                        </div>
+                        <br>
+                        <br>
+                                    </div> -->
+            </div>
+        </section>
+
+        <!-- <section class="module" id="tata-tertib" style="background-color: rgb(236, 236, 236)">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt judul">Tata Tertib</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <ol>
+                                            <li style="font-size: 18px">
+                            <p>Hanya penghuni, tamu yang diundang, dan pihak berkepentingan yang diperbolehkan masuk.</p>
+                        </li>
+                                            <li style="font-size: 18px">
+                            <p>Penghuni wajib melaporkan tamu yang datang larut malam atau menginap.</p>
+                        </li>
+                                            <li style="font-size: 18px">
+                            <p>Setiap penghuni wajib menjaga kebersihan lingkungan.</p>
+                        </li>
+                                            <li style="font-size: 18px">
+                            <p>Tidak diperbolehkan membuat kebisingan yang mengganggu, terutama pada malam hari (biasanya setelah pukul 22.00).</p>
+                        </li>
+                                            <li style="font-size: 18px">
+                            <p>Kendaraan penghuni harus diparkir di area yang telah ditentukan, tidak boleh menghalangi jalan atau rumah tetangga.</p>
+                        </li>
+                                            <li style="font-size: 18px">
+                            <p>Fasilitas umum seperti taman, jalan, dan tempat bermain harus dijaga bersama.</p>
+                        </li>
+                                    </ol>
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+
+        <hr class="divider-w">
+        <section class="module" id="pengurus">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt judul">Biodata</h2>
+              </div>
+            </div>
+            <div class="row">
+                                    <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" style="margin-bottom: 20px" onclick=" fadeInUp">
+                        <div class="team-item">
+                            <div class="team-image"><img style="width: 250px; height: 340px; object-fit: cover;" src="storage/foto_pengurus/zacky.jpg" alt="Member Photo"/>
+                            <div class="team-detail">
+                                <div class="team-social">
+                                    <a href="https://www.instagram.com/zackymfauzy/" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/@darkknight-qg4vg" target="_blank"><i class="fa fa-youtube"></i></a>
+                                    <a href="https://wa.me/6283827908956" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                                    <a href="https://www.facebook.com/Gpu.Suhe/" target="_blank"><i class="fa fa-facebook"></i></a>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="team-descr font-alt">
+                            <div class="team-name">Zacky Muhammad Fauzy</div>
+                            <div class="team-role">Pemilik</div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" style="margin-bottom: 20px" onclick=" fadeInUp">
+                        <div class="team-item">
+                            <div class="team-image"><img style="width: 250px; height: 340px; object-fit: cover;" src="storage/foto_pengurus/teh fitri.png" alt="Member Photo"/>
+                            <div class="team-detail">
+                                <div class="team-social">
+                                    <!-- <a href="#pengurus" target=""><i class="fa fa-instagram"></i></a> -->
+                                    <!-- <a href="#pengurus" target=""><i class="fa fa-youtube"></i></a> -->
+                                    <a href="https://wa.me/087737615203" target=""><i class="fa fa-whatsapp"></i></a>
+                                    <!-- <a href="#pengurus" target=""><i class="fa fa-facebook"></i></a> -->
+                                </div>
+                            </div>
+                            </div>
+                            <div class="team-descr font-alt">
+                            <div class="team-name">Fitri</div>
+                            <div class="team-role">Bendahara</div>
+                            </div>
+                        </div>
+                    </div>
+                                    <!-- <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" style="margin-bottom: 20px" onclick=" fadeInUp">
+                        <div class="team-item">
+                            <div class="team-image"><img style="width: 250px; height: 340px; object-fit: cover;" src="storage/foto_pengurus/team-4.jpg" alt="Member Photo"/>
+                            <div class="team-detail">
+                                <div class="team-social">
+                                    <a href="#pengurus" target=""><i class="fa fa-instagram"></i></a>
+                                    <a href="#pengurus" target=""><i class="fa fa-youtube"></i></a>
+                                    <a href="#pengurus" target=""><i class="fa fa-whatsapp"></i></a>
+                                    <a href="#pengurus" target=""><i class="fa fa-facebook"></i></a>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="team-descr font-alt">
+                            <div class="team-name">Ibrahim</div>
+                            <div class="team-role">Ketua RW</div>
+                            </div>
+                        </div>
+                    </div> -->
+                                    <!-- <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" style="margin-bottom: 20px" onclick="fadeInUp">
+                        <div class="team-item">
+                            <div class="team-image"><img style="width: 250px; height: 340px; object-fit: cover;" src="storage/foto_pengurus/team-3.jpg" alt="Member Photo"/>
+                            <div class="team-detail">
+                                <div class="team-social">
+                                    <a href="#pengurus" target=""><i class="fa fa-instagram"></i></a>
+                                    <a href="#pengurus" target=""><i class="fa fa-youtube"></i></a>
+                                    <a href="#pengurus" target=""><i class="fa fa-whatsapp"></i></a>
+                                    <a href="#pengurus" target=""><i class="fa fa-facebook"></i></a>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="team-descr font-alt">
+                            <div class="team-name">Susi</div>
+                            <div class="team-role">Bendahara</div>
+                            </div>
+                        </div>
+                    </div> -->
+                
+            </div>
+          </div>
+        </section>
+
+        <section id="map-section">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.406740325213!2d107.87282547379574!3d-7.220088870892384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b1b0bcf3afb3%3A0x635e506c58a91291!2sZ%20Grafika!5e1!3m2!1sen!2sid!4v1747109152411!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        </section>
+
+
+      </div>
+      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+      <script async="" defer="" src="https://maps.app.goo.gl/ednV9LXk3eNbeRVLA"></script>
+    </main>
+    <!--
+    JavaScripts
+    =============================================
+    -->
+    <script src="template/live/assets/lib/jquery/dist/jquery.js"></script>
+    <script src="template/live/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="template/live/assets/lib/wow/dist/wow.js"></script>
+    <script src="template/live/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="template/live/assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="template/live/assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="template/live/assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="template/live/assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="template/live/assets/lib/smoothscroll.js"></script>
+    <script src="template/live/assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="template/live/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script async="" defer="" src="https://maps.app.goo.gl/ednV9LXk3eNbeRVLA"></script>
+    <script src="template/live/assets/js/plugins.js"></script>
+    <script src="template/live/assets/js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+          $('.features-item').each(function() {
+            const featuresItem = $(this);
+            const zoomImage = featuresItem.find('.zoom-effect');
+            const lens = featuresItem.find('.zoom-lens');
+            const result = featuresItem.find('.zoom-result');
+
+            lens.on('mousemove', function(e) { moveLens(e, zoomImage, lens, result); });
+            zoomImage.on('mousemove', function(e) { moveLens(e, zoomImage, lens, result); });
+            lens.on('mouseleave', function() {
+              lens.hide();
+              result.hide();
+            });
+            zoomImage.on('mouseleave', function() {
+              lens.hide();
+              result.hide();
+            });
+
+            function moveLens(e, zoomImage, lens, result) {
+              const pos = getCursorPos(e, zoomImage);
+              const lensWidth = lens.width() / 2;
+              const lensHeight = lens.height() / 2;
+
+              let left = pos.x - lensWidth;
+              let top = pos.y - lensHeight;
+
+              if (left < 0) left = 0;
+              if (top < 0) top = 0;
+              if (left > zoomImage.width() - lens.width()) left = zoomImage.width() - lens.width();
+              if (top > zoomImage.height() - lens.height()) top = zoomImage.height() - lens.height();
+
+              lens.css({ left: left + 'px', top: top + 'px' });
+              result.css({
+                display: 'block',
+                backgroundImage: 'url(' + zoomImage.attr('src') + ')',
+                backgroundSize: zoomImage.width() * 2 + 'px ' + zoomImage.height() * 2 + 'px',
+                backgroundPosition: '-' + (left * 2) + 'px -' + (top * 2) + 'px'
+              });
+
+              lens.show();
+            }
+
+            function getCursorPos(e, zoomImage) {
+              const rect = zoomImage[0].getBoundingClientRect();
+              const x = e.pageX - rect.left - window.pageXOffset;
+              const y = e.pageY - rect.top - window.pageYOffset;
+              return { x: x, y: y };
+            }
+          });
+        });
+    </script>
+  </body>
+
+<!-- Mirrored from cluster.terratradesolution.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 May 2025 03:32:32 GMT -->
+</html>
